@@ -27,7 +27,7 @@ class CuboidMaker2 {
 }
 
 // Create a cuboid Object
-const cuboid2 = new CuboidMaker2 (4, 5, 5)
+const cuboid2 = new CuboidMaker2(4, 5, 5)
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid2.volume2()); // 100
@@ -42,13 +42,13 @@ class CubeMaker extends CuboidMaker2 {
     cubevolume() {
         return this.length * this.width * this.height
     }
-    cubeSurfaceArea(){
+    cubeSurfaceArea() {
         return 6 * (this.length * this.width)
     }
 }
 
 // Create a cube Object. Note that all sides of a cube must be equal
-const cube = new CubeMaker (5, 5, 5)
+const cube = new CubeMaker(5, 5, 5)
 
 // Test outputs
 console.log(cube.cubevolume());
