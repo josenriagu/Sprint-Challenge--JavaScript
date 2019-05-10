@@ -30,13 +30,38 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    The biggest difference may be seen in the fact that while `forEach()` method simply calls a provided function on an array without returning anything (undefined), `map()` method actually returns a new array of same size by utilizing return values.
+
 2. What is the difference between a function and a method?
+
+    1. A function is a piece of code that is called by name while a method is called by name that is associated with an object.
+    2. All data that is passed on a function is explicitly passed while a method is implicitly passed the object on which it was called.
+    `In a nutshell, we may say that all methods are functions, but not all functions are methods.`
 
 3. What is closure?
 
+    A closure is a term in JavaScript used to define a function and all variable it has access to - scope chain. This extends to the fact that an inner function has access to variables within its own scope as well as the outer function's variables and not vice versa.
+
 4. Describe the four rules of the 'this' keyword.
 
+    `Rule 1: Window Binding`
+    It states that if a function is contained in the global scope, the value of `this` inside of that function will be the window object.
+    
+    `Rule 2: Implicit Binding`
+    It states that if a function is called by a preceding dot, the object before that dot is `this`.
+    
+    `Rule 3: New Binding`
+    It states that if a constructor function is used, `this` refers to the specific instance of the object that is created and returned by the constructor function.
+    
+    `Rule 4: Explicit Binding`
+    This states that if JavaScript’s call or apply method is used, `this` is explicitly defined.
+
 5. Why do we need super() in an extended class?
+
+    Super() is used to access and call functions on an object's parent. It can also be used directly on a constructor, where it appears alone and must be used before `this` keyword is used.
+    It can be used in two ways:
+    `super([arguments]);` which calls the parent constructor or
+    `super.functionOnParent([arguments]);` which directly calls a function defined in the parent class
 
 ## Project Set up
 
