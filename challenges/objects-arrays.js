@@ -9,7 +9,7 @@
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 const tyrannosaurus = {
   'object name': 'tyrannosaurus',
-  diet: 'herbivorous',
+  diet: 'carnivorous',
   weight: '7000kg',
   length: '12m',
   period: 'Cretaceous',
@@ -78,7 +78,7 @@ for (let i = 0; i < graduates.length; i++) {
   university = graduates[i].university;
   universities.push(university);
 }
-console.log(universities)
+console.log(universities.sort())
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. 
 
@@ -96,13 +96,13 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-// const uni = [];
-// for (let i = 0; i < graduates.length; i++) {
-//   if (graduates.university.split('') === 'U') {
-//     uni.push(graduates.university[i])
-//   }
-// }
-// console.log(uni);
+const uni = [];
+for (let i = 0; i < graduates.length; i++) {
+  if (graduates[i].university.substring(0, 3) === 'Uni') {
+    uni.push(graduates[i].university)
+  }
+}
+console.log(uni);
 
 
 // ==== ADVANCED Array Methods ====
